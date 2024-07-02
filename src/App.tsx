@@ -3,11 +3,19 @@ import imageCoins from '../public/assets/imageCoins.png'
 
 export function App() {
   return (
-    <main>
+    <main className='max-w-[1216px] mx-auto'>
       <div className="text-slate-50 h-screen grid grid-cols-2 bg-zinc-900">
-        <div className="flex items-center justify-center bg-zinc-900">
+        <div className="flex flex-col items-center justify-center bg-zinc-900">
 
-          <div className='flex flex-col gap-5 items-center border w-[350px] rounded-lg py-10'>
+          <div className='flex flex-col items-start -ml-20 gap-4 mb-5'>
+            <div>
+              <h1 className='text-4xl font-bold tracking-wider'>Esteja Sempre</h1>
+              <h1 className='text-4xl font-bold tracking-wider'>Atualizado!</h1>
+            </div>
+            <h2 className='font-light text-slate-300'>Grátis, online e rápido.</h2>
+          </div>
+
+          <div className='flex flex-col gap-5 items-center border w-[370px] rounded-lg py-10'>
             <h1 className='font-semibold text-2xl'>Currency Converter</h1>
 
             <form className='flex flex-col gap-2 w-[300px] mt-5'>
