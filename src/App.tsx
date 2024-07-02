@@ -1,7 +1,14 @@
 import { MoveHorizontal } from 'lucide-react'
 import imageCoins from '../public/assets/imageCoins.png'
+import { useState } from 'react'
 
 export function App() {
+
+  const [amount, setaAmount] = useState('')
+  const [coinFrom, setCoinFrom] = useState('USD')
+  const [coinTo, setCointTo] = useState('BRL')
+  const [result, setResult] = useState('')
+  
   return (
     <main className='max-w-[1216px] mx-auto'>
       <div className="text-slate-50 h-screen grid grid-cols-2 bg-zinc-900">
