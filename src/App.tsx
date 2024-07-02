@@ -16,10 +16,10 @@ export function App() {
           </div>
 
           <div className='flex flex-col gap-5 items-center border w-[370px] rounded-lg py-10'>
-            <h1 className='font-semibold text-2xl'>Currency Converter</h1>
+            <h1 className='font-semibold text-2xl'>Faça a sua conversão</h1>
 
             <form className='flex flex-col gap-2 w-[300px] mt-5'>
-              <label htmlFor="enterValue">Enter Amount</label>
+              <label htmlFor="enterValue">Digite o valor</label>
               <input
                 type="text"
                 id='enterValue'
@@ -30,7 +30,7 @@ export function App() {
             <form className='flex items-center justify-center gap-7'>
 
               <div className='flex flex-col gap-1'>
-                <label htmlFor="fromCoin" className='text-slate-50'>From</label>
+                <label htmlFor="fromCoin" className='text-slate-50'>De</label>
                 <select id='fromCoin' className='border rounded-md px-4 py-2 bg-zinc-900 text-sm'>
                   <option value="USD" selected>Dolar</option>
                   <option value="BRL">Real</option>
@@ -43,7 +43,7 @@ export function App() {
               </div>
 
               <div className='flex flex-col gap-1'>
-                <label htmlFor="toCoin">To</label>
+                <label htmlFor="toCoin">Para</label>
                 <select id='toCoin' className='border rounded-md px-4 py-2 bg-zinc-900 text-sm'>
                   <option value="USD">Dolar</option>
                   <option value="BRL" selected>Real</option>
@@ -53,9 +53,9 @@ export function App() {
             </form>
 
             <button className='mt-5 py-4 px-10 bg-purple-700 rounded-lg text-lg
-            hover:scale-105 duration-200'
+            hover:scale-105 duration-200 hover:tracking-wide'
             >
-              Get Exchange Rate
+              Obter valor convertido
             </button>
 
             <span className='mt-5 text-sm font-semibold tracking-wider text-slate-300 hover:text-slate-200 duration-200'>
