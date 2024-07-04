@@ -21,12 +21,15 @@ export function App() {
     if (amount === '') {
       alert('Digite um valor no campo de conversão')
     }
+    if (coinFrom === coinTo) {
+      alert('ERRO! Selecione tipos diferentes de moedas para converter')
+    }
   }
 
   return (
     <main className='max-w-[1216px] mx-auto'>
-      <div className="text-slate-50 h-screen grid grid-cols-2 bg-zinc-900">
-        <div className="flex flex-col items-center justify-center bg-zinc-900">
+      <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1">
+        <div className="flex flex-col items-center justify-center max-sm:scale-90">
 
           <div className='flex flex-col items-start -ml-20 gap-4 mb-5'>
             <div>
@@ -111,7 +114,9 @@ export function App() {
           </div>
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center justify-center
+        max-md:hidden"
+        >
           <img
             src={imageCoins}
             width={700}
