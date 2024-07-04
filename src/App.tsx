@@ -32,7 +32,7 @@ export function App() {
   return (
     <main className='max-w-[1216px] mx-auto'>
       <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1">
-        <div className="flex flex-col items-center justify-center ">
+        <div className="flex flex-col items-center justify-center max-sm:scale-90">
 
           <div className='flex flex-col items-start -ml-20 gap-4 mb-5'>
             <div>
