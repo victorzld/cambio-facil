@@ -95,11 +95,18 @@ export function App() {
             </button>
 
             {result.length > 0 && (
-              <span
-                className='mt-5 text-sm font-semibold tracking-wider text-slate-300 hover:text-slate-200 duration-200'
+              <div className='flex gap-1 items-center mt-5 text-sm font-semibold tracking-wider text-slate-300
+               hover:text-slate-200 duration-200 hover:scale-105'
               >
-                O valor convertido é {result}
-              </span>
+                <span
+                  className=''
+                >
+                  O valor convertido é
+                </span>
+                <span className='font-extrabold text-slate-200 hover:text-slate-100'>
+                  {result}
+                </span>
+              </div>
             )}
           </div>
         </div>
