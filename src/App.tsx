@@ -15,7 +15,7 @@ export function App() {
     fetch(
       `https://${host}/latest?amount=${amount}&from=${coinFrom}&to=${coinTo}`
     )
-      .then(resp => resp.json())
+      .then(resp => resp.json())git 
       .then((data) => setResult(data.rates[coinTo].toFixed(2)));
 
     if (amount === '') {
