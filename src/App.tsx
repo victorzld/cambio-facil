@@ -22,7 +22,10 @@ export function App() {
       alert('Digite um valor no campo de conversão')
     }
     if (coinFrom === coinTo) {
-      alert('ERRO! Selecione tipos diferentes de moedas para converter')
+      alert('ERRO! Selecione diferentes de moedas para converter')
+    }
+    if (result != '' && amount != '') {
+      alert('Quantia inserida já convertida. Por favor digite um novo valor')
     }
   }
 
@@ -98,7 +101,7 @@ export function App() {
             </button>
 
             {result.length > 0 && (
-              <div className='flex gap-1 items-center mt-5 text-sm font-semibold tracking-wider text-slate-300
+              <div className='flex gap-1 items-center mt-5 text-lg font-semibold tracking-wider text-slate-300
                hover:text-slate-200 duration-200 hover:scale-105'
               >
                 <span
