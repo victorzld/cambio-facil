@@ -32,7 +32,7 @@ export function App() {
   return (
     <main className='max-w-[1216px] mx-auto'>
       <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1">
-        <div className="flex flex-col items-center justify-center max-sm:scale-90">
+        <div className="flex flex-col items-center justify-center ">
 
           <div className='flex flex-col items-start -ml-20 gap-4 mb-5'>
             <div>
@@ -43,29 +43,41 @@ export function App() {
           </div>
 
           <div className='flex flex-col gap-5 items-center border w-[370px] rounded-lg py-10'>
-            <h1 className='font-semibold text-2xl'>Faça a sua conversão</h1>
+            <h1 className='font-semibold text-2xl max-sm:text-3xl'>Faça a sua conversão</h1>
 
             <form className='flex flex-col gap-2 w-[300px] mt-5'>
-              <label htmlFor="enterValue">Digite o valor</label>
+              <label
+                htmlFor="enterValue"
+                className='max-sm:text-xl'
+              >
+                Digite o valor
+              </label>
               <input
                 onChange={(e) => setAmount(e.target.value)}
                 value={amount}
                 autoComplete='off'
                 type="text"
                 id='enterValue'
-                className='bg-transparent border border-white rounded-lg outline-none py-1 px-2'
+                className='bg-transparent border border-white rounded-lg outline-none py-1 px-2
+                max-sm:py-2'
               />
             </form>
 
             <form className='flex items-center justify-center gap-7'>
 
               <div className='flex flex-col gap-1'>
-                <label htmlFor="fromCoin" className='text-slate-50'>De</label>
+                <label
+                  htmlFor="fromCoin"
+                  className='text-slate-50 max-sm:text-lg'
+                >
+                  De
+                </label>
                 <select
                   onChange={(e) => setCoinFrom(e.target.value)}
                   value={coinFrom}
                   id='fromCoin'
-                  className='border rounded-md px-4 py-2 bg-zinc-900 text-sm'
+                  className='border rounded-md px-4 py-2 bg-zinc-900 text-sm
+                  max-sm:px-5 max-sm:py-3 max-sm:text-lg'
                 >
                   <option value="USD" selected>Dolar</option>
                   <option value="BRL">Real</option>
@@ -78,12 +90,18 @@ export function App() {
               </div>
 
               <div className='flex flex-col gap-1'>
-                <label htmlFor="toCoin">Para</label>
+                <label
+                  htmlFor="toCoin"
+                  className='max-sm:text-lg'
+                >
+                  Para
+                </label>
                 <select
                   value={coinTo}
                   onChange={(e) => setCointTo(e.target.value)}
                   id='toCoin'
-                  className='border rounded-md px-4 py-2 bg-zinc-900 text-sm'
+                  className='border rounded-md px-4 py-2 bg-zinc-900 text-sm
+                  max-sm:px-5 max-sm:py-3 max-sm:text-lg'
                 >
                   <option value="USD">Dolar</option>
                   <option value="BRL" selected>Real</option>
