@@ -19,14 +19,14 @@ export function App() {
       .then((data) => setResult(data.rates[coinTo].toFixed(2)));
 
     if (amount === '') {
-      alert('Digite um valor no campo de conversão')
+      alert('Campo vazio. Digite um valor para converter')
+    } else {
+      if (coinFrom === coinTo) {
+        alert('Não é possível converter a mesma moeda. Selecione outro tipo e tente novamente!')
+      } else {
+      }
     }
-    if (coinFrom === coinTo) {
-      alert('ERRO! Selecione diferentes de moedas para converter')
-    }
-    if (result != '' && amount != '') {
-      alert('Quantia inserida já convertida. Por favor digite um novo valor')
-    }
+
   }
 
   return (
