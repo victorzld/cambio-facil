@@ -43,7 +43,7 @@ export function App() {
           <div className='flex flex-col gap-5 items-center border w-[370px] rounded-lg py-10'>
             <h1 className='font-semibold text-2xl max-sm:text-3xl'>Faça a sua conversão</h1>
 
-            <form className='flex flex-col gap-2 w-[300px] mt-5'>
+            <div className='flex flex-col gap-2 w-[300px] mt-5'>
               <label
                 htmlFor="enterValue"
                 className='max-sm:text-xl'
@@ -51,7 +51,7 @@ export function App() {
                 Digite o valor
               </label>
               <input
-                onChange={(e) => setAmount(e.target.value)}
+                onChange={(event) => setAmount(event.target.value)}
                 value={amount}
                 autoComplete='off'
                 type="text"
@@ -59,10 +59,9 @@ export function App() {
                 className='bg-transparent border border-white rounded-lg outline-none py-1 px-2
                 max-sm:py-2'
               />
-            </form>
+            </div>
 
-            <form className='flex items-center justify-center gap-7'>
-
+            <div className='flex items-center justify-center gap-7'>
               <div className='flex flex-col gap-1'>
                 <label
                   htmlFor="fromCoin"
@@ -96,7 +95,7 @@ export function App() {
                 </label>
                 <select
                   value={coinTo}
-                  onChange={(e) => setCointTo(e.target.value)}
+                  onChange={(event) => setCointTo(event.target.value)}
                   id='toCoin'
                   className='border rounded-md px-4 py-2 bg-zinc-900 text-sm
                   max-sm:px-5 max-sm:py-3 max-sm:text-lg'
@@ -106,7 +105,7 @@ export function App() {
                   <option value="EUR">Euro</option>
                 </select>
               </div>
-            </form>
+            </div>
 
             <button
               onClick={() => convertCurrency()}
