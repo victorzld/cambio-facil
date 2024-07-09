@@ -23,10 +23,8 @@ export function App() {
     } else {
       if (coinFrom === coinTo) {
         alert('Não é possível converter a mesma moeda. Selecione outro tipo e tente novamente!')
-      } else {
       }
     }
-
   }
 
   return (
