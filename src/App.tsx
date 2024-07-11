@@ -1,6 +1,7 @@
 import { MoveHorizontal } from 'lucide-react'
 import imageCoins from '../public/assets/imageCoins.png'
 import { useState } from 'react'
+import Swal from 'sweetalert2'
 
 export function App() {
 
@@ -19,10 +20,22 @@ export function App() {
       .then((data) => setResult(data.rates[coinTo].toFixed(2)));
 
     if (amount === '') {
-      alert('Campo vazio. Digite um valor para converter')
+      Swal.fire(
+        {
+          text: 'Campo vazio. Digite um valor para converter.',
+          icon: 'error',
+          title: 'ERRO!!'
+        }
+      )
     } else {
       if (coinFrom === coinTo) {
-        alert('Não é possível converter a mesma moeda. Selecione outro tipo e tente novamente!')
+        Swal.fire(
+          {
+            text: 'Não é possível converter a mesma moeda. Selecione outro tipo e tente novamente!',
+            icon: 'error',
+            title: 'Algo deu errado.'
+          }
+        )
       }
     }
   }
