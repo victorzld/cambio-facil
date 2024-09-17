@@ -11,7 +11,7 @@ export function App() {
   const [result, setResult] = useState('')
 
 
-  async function convertCurrency() {
+  async function handleConvertCurrency() {
     const host = 'api.frankfurter.app';
     fetch(
       `https://${host}/latest?amount=${amount}&from=${coinFrom}&to=${coinTo}`
@@ -122,7 +122,7 @@ export function App() {
             </form>
 
             <button
-              onClick={() => convertCurrency()}
+              onClick={() => handleConvertCurrency()}
               className='mt-5 py-4 px-10 bg-purple-700 rounded-lg text-lg
             hover:scale-105 duration-200 hover:tracking-wide'
             >
