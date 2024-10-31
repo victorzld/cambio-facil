@@ -1,5 +1,4 @@
 import { MoveHorizontal } from 'lucide-react'
-import imageCoins from '../public/assets/imageCoins.png'
 import { useState } from 'react'
 import Swal from 'sweetalert2'
 import { SliderImages } from './components/slider'
