@@ -161,7 +161,9 @@ export function App() {
           </div>
         </form>
 
-        <SliderImages />
+        <div className='my-auto max-md:hidden'>
+          <SliderImages />
+        </div>
       </div>
     </main>
   )
