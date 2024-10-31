@@ -2,6 +2,7 @@ import { MoveHorizontal } from 'lucide-react'
 import imageCoins from '../public/assets/imageCoins.png'
 import { useState } from 'react'
 import Swal from 'sweetalert2'
+import { SliderImages } from './components/slider'
 
 export function App() {
 
@@ -77,7 +78,7 @@ export function App() {
                   type="text"
                   id='enterValue'
                   className='bg-transparent border border-white rounded-lg outline-none py-1 px-2
-      max-sm:py-2'
+                    max-sm:py-2'
                 />
               </div>
 
@@ -95,7 +96,7 @@ export function App() {
                     value={coinFrom}
                     id='fromCoin'
                     className='border rounded-md px-4 py-2 bg-zinc-900 text-sm
-        max-sm:px-5 max-sm:py-3 max-sm:text-lg'
+                        max-sm:px-5 max-sm:py-3 max-sm:text-lg'
                   >
                     <option value="USD" selected>Dolar</option>
                     <option value="BRL">Real</option>
@@ -140,29 +141,28 @@ export function App() {
                 <div className='flex gap-1 items-center mt-5 text-lg font-semibold tracking-wider text-slate-300
                    hover:text-slate-200 duration-200 hover:scale-105'
                 >
-                  <span
-                    className=''
-                  >
-                    O valor convertido é
-                  </span>
-                  <span className='font-extrabold text-slate-200 hover:text-slate-100'>
-                    {result}
-                  </span>
+                  {coinTo === 'USD' && (
+                    <span className='font-extrabold text-slate-200 hover:text-slate-100'>
+                      O valor convertido é {result} dólares
+                    </span>
+                  )}
+                  {coinTo === 'BRL' && (
+                    <span className='font-extrabold text-slate-200 hover:text-slate-100'>
+                      O valor convertido é {result} reais
+                    </span>
+                  )}
+                  {coinTo === 'EUR' && (
+                    <span className='font-extrabold text-slate-200 hover:text-slate-100'>
+                      O valor convertido é {result} euros
+                    </span>
+                  )}
                 </div>
               )}
             </div>
           </div>
         </form>
 
-        <div className="flex items-center justify-center
-        max-md:hidden"
-        >
-          <img
-            src={imageCoins}
-            width={700}
-            height={700}
-          />
-        </div>
+        <SliderImages />
       </div>
     </main>
   )
