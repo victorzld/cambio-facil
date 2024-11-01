@@ -131,28 +131,27 @@ export function App() {
               <button
 
                 className='mt-5 py-4 px-10 bg-purple-700 rounded-lg text-lg
-                  hover:scale-105 duration-200 hover:tracking-wide'
+                  hover:scale-95 duration-200'
               >
                 Obter valor convertido
               </button>
 
               {result.length > 0 && (
-                <div className='flex gap-1 items-center mt-5 text-lg font-semibold tracking-wider text-slate-300
-                   hover:text-slate-200 duration-200 hover:scale-105'
+                <div className='flex gap-1 items-center font-bold mt-5 text-lg tracking-wider text-slate-300'
                 >
                   {coinTo === 'USD' && (
-                    <span className='font-extrabold text-slate-200 hover:text-slate-100'>
-                      O valor convertido é {result} dólares
+                    <span className='text-slate-200 hover:text-slate-100'>
+                      É {result} dólares
                     </span>
                   )}
                   {coinTo === 'BRL' && (
-                    <span className='font-extrabold text-slate-200 hover:text-slate-100'>
-                      O valor convertido é {result} reais
+                    <span className='text-slate-200 hover:text-slate-100'>
+                      É {result} reais
                     </span>
                   )}
                   {coinTo === 'EUR' && (
-                    <span className='font-extrabold text-slate-200 hover:text-slate-100'>
-                      O valor convertido é {result} euros
+                    <span className='text-slate-200 hover:text-slate-100'>
+                      É {result} euros
                     </span>
                   )}
                 </div>
