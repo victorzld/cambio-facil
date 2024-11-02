@@ -8,7 +8,7 @@
 
 ## 📌 Sobre a nossa aplicação
 
-- <a href="https://currency-converter-mu-olive.vercel.app" target="_blank">Visite a aplicação</a>
+- <a href="https://currency-converter-mu-olive.vercel.app">Visite a aplicação</a>
 
 ![video](https://github.com/user-attachments/assets/4f04ea52-9af6-4ee1-9ffd-6785f008c202)
 
