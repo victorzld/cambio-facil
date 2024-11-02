@@ -29,7 +29,7 @@ Para utilizar a aplicação localmente, é necessário ter instalado em sua máq
 
 ### Clonar
 
-Como clonar este projeto na sua máquina local:
+Para clonar este projeto na sua máquina local:
 
 ```bash
 git clone https://github.com/victorzld/cambio-facil.git
