@@ -136,7 +136,7 @@ export function App() {
                 Obter valor convertido
               </button>
 
-              {result.length > 0 && (
+              {result.length > 0 && coinTo != coinFrom && (
                 <div className='flex gap-1 items-center font-bold mt-5 text-lg tracking-wider text-slate-300'
                 >
                   {coinTo === 'USD' && (
