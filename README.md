@@ -8,6 +8,10 @@
 
 ## 📌 Sobre a nossa aplicação
 
+- <a href="https://currency-converter-mu-olive.vercel.app">Visite a aplicação</a>
+
+![video](https://github.com/user-attachments/assets/4f04ea52-9af6-4ee1-9ffd-6785f008c202)
+
 Esta aplicação é um conversor monetário, no qual o usuário consegue fazer conversões das principais moedas do mundo. Basta selecionar a moeda de origem e para qual deseja converter. 
 
 Foi desenvolvido utilizando o React, Vite, Javascript, Typescript e Tailwind CSS.
@@ -28,7 +32,7 @@ Para utilizar a aplicação localmente, é necessário ter instalado em sua máq
 Como clonar este projeto na sua máquina local:
 
 ```bash
-git clone your-project-url-in-github
+git clone https://github.com/victorzld/cambio-facil.git
 ```
 
 ### Iniciar o projeto
@@ -36,7 +40,7 @@ git clone your-project-url-in-github
 Para iniciar o seu projeto:
 
 ```bash
-cd nome-do-projeto
+cd cambio-facil
 npm i
 ```
 
