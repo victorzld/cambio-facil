@@ -10,6 +10,8 @@
 
 - <a href="https://currency-converter-mu-olive.vercel.app">Visite a aplicação</a>
 
+![video](https://github.com/user-attachments/assets/4f04ea52-9af6-4ee1-9ffd-6785f008c202)
+
 Esta aplicação é um conversor monetário, no qual o usuário consegue fazer conversões das principais moedas do mundo. Basta selecionar a moeda de origem e para qual deseja converter. 
 
 Foi desenvolvido utilizando o React, Vite, Javascript, Typescript e Tailwind CSS.
