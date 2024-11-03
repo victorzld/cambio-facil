@@ -43,7 +43,7 @@ export function App() {
   }
 
   return (
-    <main className='max-w-[1216px] mx-auto'>
+    <main className='max-w-[1216px] mx-auto max-md:-mt-7'>
       <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1">
 
         <form onSubmit={handleConvertCurrency}
