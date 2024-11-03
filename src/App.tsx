@@ -157,57 +157,57 @@ export function App() {
                 >
                   {coinTo === 'USD' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'BRL' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'EUR' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'GBP' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'JPY' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'AUD' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'CHF' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'CAD' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'CNY' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'ARS' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                   {coinTo === 'TRY' && (
                     <span>
-                      {amount} {coinFrom} = {result} {coinTo}
+                      {coinFrom} {amount} = {coinTo} {result}
                     </span>
                   )}
                 </div>
