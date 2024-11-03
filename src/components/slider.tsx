@@ -20,7 +20,7 @@ const data = [
 
 export function SliderImages() {
     return (
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center mt-8'>
             <SwiperComponent
                 modules={[Autoplay]}
                 slidesPerView={1}

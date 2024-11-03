@@ -60,10 +60,10 @@ export function App() {
               <h2 className='font-light text-slate-300'>Grátis, online e rápido.</h2>
             </div>
 
-            <div className='flex flex-col gap-5 items-center border w-[370px] rounded-lg py-10'>
+            <div className='flex flex-col gap-10 items-center border w-[480px] rounded-lg py-10'>
               <h1 className='font-semibold text-2xl max-sm:text-3xl'>Faça a sua conversão</h1>
 
-              <div className='flex flex-col gap-2 w-[300px] mt-5'>
+              <div className='flex flex-col gap-2 w-[480px] px-10 mt-5'>
                 <label
                   htmlFor="enterValue"
                   className='max-sm:text-xl'
@@ -97,9 +97,17 @@ export function App() {
                     className='border rounded-md px-4 py-2 bg-zinc-900 text-sm
                         max-sm:px-5 max-sm:py-3 max-sm:text-lg'
                   >
-                    <option value="USD" selected>Dolar</option>
+                    <option value="USD" selected>Dólar Americano</option>
                     <option value="BRL">Real</option>
                     <option value="EUR">Euro</option>
+                    <option value="GBP" selected>Libra Esterlina</option>
+                    <option value="JPY">Iene</option>
+                    <option value="AUD">Dólar Australiano</option>
+                    <option value="CHF" selected>Franco Suíço</option>
+                    <option value="CAD">Dólar Canadense</option>
+                    <option value="CNY">Yuan Renminbi</option>
+                    <option value="ARS" selected>Peso Argentino</option>
+                    <option value="TRY">Lira Turca</option>
                   </select>
                 </div>
 
@@ -121,9 +129,17 @@ export function App() {
                     className='border rounded-md px-4 py-2 bg-zinc-900 text-sm
                        max-sm:px-5 max-sm:py-3 max-sm:text-lg'
                   >
-                    <option value="USD">Dolar</option>
-                    <option value="BRL" selected>Real</option>
+                    <option value="USD" selected>Dólar Americano</option>
+                    <option value="BRL">Real</option>
                     <option value="EUR">Euro</option>
+                    <option value="GBP" selected>Libra Esterlina</option>
+                    <option value="JPY">Iene</option>
+                    <option value="AUD">Dólar Australiano</option>
+                    <option value="CHF" selected>Franco Suíço</option>
+                    <option value="CAD">Dólar Canadense</option>
+                    <option value="CNY">Yuan Renminbi</option>
+                    <option value="ARS" selected>Peso Argentino</option>
+                    <option value="TRY">Lira Turca</option>
                   </select>
                 </div>
               </div>
@@ -137,21 +153,61 @@ export function App() {
               </button>
 
               {result.length > 0 && coinTo != coinFrom && (
-                <div className='flex gap-1 items-center font-bold mt-5 text-lg tracking-wider text-slate-300'
+                <div className='flex gap-1 items-center font-semibold -mt-4 text-lg tracking-wider text-slate-50'
                 >
                   {coinTo === 'USD' && (
-                    <span className='text-slate-200 hover:text-slate-100'>
-                      É {result} dólares
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
                     </span>
                   )}
                   {coinTo === 'BRL' && (
-                    <span className='text-slate-200 hover:text-slate-100'>
-                      É {result} reais
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
                     </span>
                   )}
                   {coinTo === 'EUR' && (
-                    <span className='text-slate-200 hover:text-slate-100'>
-                      É {result} euros
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
+                    </span>
+                  )}
+                  {coinTo === 'GBP' && (
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
+                    </span>
+                  )}
+                  {coinTo === 'JPY' && (
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
+                    </span>
+                  )}
+                  {coinTo === 'AUD' && (
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
+                    </span>
+                  )}
+                  {coinTo === 'CHF' && (
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
+                    </span>
+                  )}
+                  {coinTo === 'CAD' && (
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
+                    </span>
+                  )}
+                  {coinTo === 'CNY' && (
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
+                    </span>
+                  )}
+                  {coinTo === 'ARS' && (
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
+                    </span>
+                  )}
+                  {coinTo === 'TRY' && (
+                    <span>
+                      {amount} {coinFrom} = {result} {coinTo}
                     </span>
                   )}
                 </div>
