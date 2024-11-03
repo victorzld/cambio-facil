@@ -60,10 +60,12 @@ export function App() {
               <h2 className='font-light text-slate-300'>Grátis, online e rápido.</h2>
             </div>
 
-            <div className='flex flex-col gap-10 items-center border w-[480px] rounded-lg py-10'>
+            <div className='flex flex-col gap-10 items-center border w-[480px] rounded-lg py-10 
+            max-md:w-[400px]'
+            >
               <h1 className='font-semibold text-2xl max-sm:text-3xl'>Faça a sua conversão</h1>
 
-              <div className='flex flex-col gap-2 w-[480px] px-10 mt-5'>
+              <div className='flex flex-col gap-2 w-[480px] px-10 mt-5 max-md:w-[400px]'>
                 <label
                   htmlFor="enterValue"
                   className='max-sm:text-xl'
@@ -83,7 +85,7 @@ export function App() {
 
               <div className='flex items-center justify-center gap-7 max-md:flex-col max-md:gap-0'>
 
-                <div className='flex flex-col gap-1'>
+                <div className='flex flex-col gap-1 max-md:w-[300px]'>
                   <label
                     htmlFor="fromCoin"
                     className='text-slate-50 max-sm:text-lg'
@@ -120,7 +122,7 @@ export function App() {
                   </div>
                 </div>
 
-                <div className='flex flex-col gap-1'>
+                <div className='flex flex-col gap-1 max-md:w-[300px]'>
                   <label
                     htmlFor="toCoin"
                     className='max-sm:text-lg'
