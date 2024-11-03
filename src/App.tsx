@@ -1,4 +1,4 @@
-import { MoveHorizontal } from 'lucide-react'
+import { MoveHorizontal, MoveVertical } from 'lucide-react'
 import { useState } from 'react'
 import Swal from 'sweetalert2'
 import { SliderImages } from './components/slider'
@@ -81,7 +81,7 @@ export function App() {
                 />
               </div>
 
-              <div className='flex items-center justify-center gap-7'>
+              <div className='flex items-center justify-center gap-7 max-md:flex-col max-md:gap-0'>
 
                 <div className='flex flex-col gap-1'>
                   <label
@@ -111,7 +111,13 @@ export function App() {
                 </div>
 
                 <div className='mt-7'>
-                  <MoveHorizontal />
+                  <div className='max-md:hidden'>
+                    <MoveHorizontal />
+                  </div>
+
+                  <div>
+                    <MoveVertical className='md:hidden' />
+                  </div>
                 </div>
 
                 <div className='flex flex-col gap-1'>
