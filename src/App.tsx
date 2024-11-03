@@ -106,7 +106,6 @@ export function App() {
                     <option value="CHF" selected>Franco Suíço</option>
                     <option value="CAD">Dólar Canadense</option>
                     <option value="CNY">Yuan Renminbi</option>
-                    <option value="ARS" selected>Peso Argentino</option>
                     <option value="TRY">Lira Turca</option>
                   </select>
                 </div>
@@ -138,7 +137,6 @@ export function App() {
                     <option value="CHF" selected>Franco Suíço</option>
                     <option value="CAD">Dólar Canadense</option>
                     <option value="CNY">Yuan Renminbi</option>
-                    <option value="ARS" selected>Peso Argentino</option>
                     <option value="TRY">Lira Turca</option>
                   </select>
                 </div>
