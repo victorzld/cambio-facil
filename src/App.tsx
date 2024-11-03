@@ -43,14 +43,14 @@ export function App() {
   }
 
   return (
-    <main className='max-w-[1216px] mx-auto max-md:-mt-7'>
+    <main className='max-w-[1216px] mx-auto max-sm:-mt-7'>
       <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1">
 
         <form onSubmit={handleConvertCurrency}
           className="flex flex-col items-center justify-center max-sm:scale-90"
         >
 
-          <div className="flex flex-col items-center justify-center max-sm:scale-90">
+          <div className="flex flex-col items-center justify-center max-md:scale-90">
 
             <div className='flex flex-col items-start -ml-20 gap-4 mb-5'>
               <div>
