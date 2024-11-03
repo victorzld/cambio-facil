@@ -19,7 +19,7 @@ export function App() {
       `https://${host}/latest?amount=${amount}&from=${coinFrom}&to=${coinTo}`
     )
       .then(resp => resp.json())
-      .then((data) => setResult(data.rates[coinTo].toFixed(2)));
+      .then((data) => setResult(data.rates[coinTo].toFixed(2)?.replace(/[.]/, ',')));
 
     if (amount === '') {
       Swal.fire(
