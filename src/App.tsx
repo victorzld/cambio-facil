@@ -5,11 +5,10 @@ import { SliderImages } from './components/slider'
 
 export function App() {
 
-  const [amount, setAmount] = useState('')
+  const [amount, setAmount] = useState('1')
   const [coinFrom, setCoinFrom] = useState('USD')
   const [coinTo, setCointTo] = useState('BRL')
   const [result, setResult] = useState('')
-
 
   async function handleConvertCurrency(event: any) {
     event.preventDefault()
@@ -76,7 +75,7 @@ export function App() {
                   onChange={(e) => setAmount(e.target.value)}
                   value={amount}
                   autoComplete='off'
-                  type="text"
+                  type="number"
                   id='enterValue'
                   className='bg-transparent border border-white rounded-lg outline-none py-1 px-2
                     max-sm:py-2'
