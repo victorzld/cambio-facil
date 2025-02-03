@@ -124,19 +124,19 @@ export function App() {
                 </div>
 
                 <div className='mt-7'>
-                  <div className='max-md:hidden  text-zinc-950'>
+                  <div className='max-md:hidden text-zinc-950'>
                     <MoveHorizontal />
                   </div>
 
-                  <div>
-                    <MoveVertical className='md:hidden' />
+                  <div className='md:hidden text-zinc-950'>
+                    <MoveVertical />
                   </div>
                 </div>
 
                 <div className='flex flex-col gap-1 max-md:w-[300px]'>
                   <label
                     htmlFor="toCoin"
-                    className='max-sm:text-lg  text-zinc-950'
+                    className='max-sm:text-lg text-zinc-950'
                   >
                     Para
                   </label>
