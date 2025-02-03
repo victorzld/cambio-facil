@@ -53,7 +53,7 @@ export function App() {
   }, [])
 
   return (
-    <main className='mx-auto max-sm:h-full bg-slate-300 '>
+    <main className='mx-auto max-sm:h-full bg-slate-300'>
       <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1 xl:px-10">
 
         <form onSubmit={handleConvertCurrency}
@@ -62,12 +62,12 @@ export function App() {
 
           <div className="flex flex-col items-center justify-center max-md:scale-90">
 
-            <div className='flex flex-col items-start max-sm:ml-10 xl:-ml-52 gap-4 mb-5'>
+            <div className='flex flex-col items-start max-sm:ml-5 xl:-ml-52 gap-4 mb-5'>
               <div>
                 <h1 className='text-4xl font-bold tracking-wider text-zinc-950'>Esteja Sempre</h1>
                 <h1 className='text-4xl font-bold tracking-wider max-sm:ml-5 text-zinc-950'>Atualizado!</h1>
               </div>
-              <h2 className='font-light text-zinc-950 max-sm:ml-9'>Grátis, online e rápido.</h2>
+              <h2 className='font-light text-zinc-950 max-sm:ml-9 max-sm:-mt-4'>Grátis, online e rápido.</h2>
             </div>
 
             <div className='flex flex-col gap-10 items-center border border-zinc-950 w-[480px] rounded-lg py-10 
