@@ -1,4 +1,4 @@
-# Câmbio Fácil 
+# Seu Dólar Hoje
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
@@ -8,7 +8,7 @@
 
 ## 📌 Sobre a nossa aplicação
 
-- <a href="https://currency-converter-mu-olive.vercel.app">Visite a aplicação</a>
+- <a href="https://www.seudolarhoje.com.br">Visite a aplicação</a>
 
 ![video](https://github.com/user-attachments/assets/4f04ea52-9af6-4ee1-9ffd-6785f008c202)
 
