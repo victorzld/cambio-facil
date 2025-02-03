@@ -53,7 +53,7 @@ export function App() {
   }, [])
 
   return (
-    <main className='mx-auto bg-slate-300'>
+    <main className='mx-auto max-sm:h-full bg-slate-300 '>
       <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1 xl:px-10">
 
         <form onSubmit={handleConvertCurrency}
