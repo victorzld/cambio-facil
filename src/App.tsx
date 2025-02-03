@@ -1,5 +1,7 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { MoveHorizontal, MoveVertical } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
 import { SliderImages } from './components/slider'
 
@@ -41,9 +43,18 @@ export function App() {
     }
   }
 
+  useEffect(() => {
+    const host = 'api.frankfurter.app';
+    fetch(
+      `https://${host}/latest?amount=${amount}&from=${coinFrom}&to=${coinTo}`
+    )
+      .then(resp => resp.json())
+      .then((data) => setResult(data.rates[coinTo].toFixed(2)?.replace(/[.]/, ',')));
+  }, [])
+
   return (
-    <main className='max-w-[1216px] mx-auto max-sm:-mt-7'>
-      <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1">
+    <main className='mx-auto bg-slate-300'>
+      <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1 xl:px-10">
 
         <form onSubmit={handleConvertCurrency}
           className="flex flex-col items-center justify-center max-sm:scale-90"
@@ -51,23 +62,23 @@ export function App() {
 
           <div className="flex flex-col items-center justify-center max-md:scale-90">
 
-            <div className='flex flex-col items-start -ml-20 gap-4 mb-5'>
+            <div className='flex flex-col items-start max-sm:ml-10 xl:-ml-52 gap-4 mb-5'>
               <div>
-                <h1 className='text-4xl font-bold tracking-wider'>Esteja Sempre</h1>
-                <h1 className='text-4xl font-bold tracking-wider'>Atualizado!</h1>
+                <h1 className='text-4xl font-bold tracking-wider text-zinc-950'>Esteja Sempre</h1>
+                <h1 className='text-4xl font-bold tracking-wider max-sm:ml-5 text-zinc-950'>Atualizado!</h1>
               </div>
-              <h2 className='font-light text-slate-300'>Grátis, online e rápido.</h2>
+              <h2 className='font-light text-zinc-950 max-sm:ml-9'>Grátis, online e rápido.</h2>
             </div>
 
-            <div className='flex flex-col gap-10 items-center border w-[480px] rounded-lg py-10 
+            <div className='flex flex-col gap-10 items-center border border-zinc-950 w-[480px] rounded-lg py-10 
             max-md:w-[400px]'
             >
-              <h1 className='font-semibold text-2xl max-sm:text-3xl'>Faça a sua conversão</h1>
+              <h1 className='font-semibold text-2xl max-sm:text-3xl  text-zinc-950'>Faça a sua conversão</h1>
 
               <div className='flex flex-col gap-2 w-[480px] px-10 mt-5 max-md:w-[400px]'>
                 <label
                   htmlFor="enterValue"
-                  className='max-sm:text-xl'
+                  className='max-sm:text-xl  text-zinc-950'
                 >
                   Digite o valor
                 </label>
@@ -77,7 +88,7 @@ export function App() {
                   autoComplete='off'
                   type="number"
                   id='enterValue'
-                  className='bg-transparent border border-white rounded-lg outline-none py-1 px-2
+                  className='bg-transparent border border-zinc-950  text-zinc-950 rounded-lg outline-none py-1 px-2
                     max-sm:py-2'
                 />
               </div>
@@ -87,7 +98,7 @@ export function App() {
                 <div className='flex flex-col gap-1 max-md:w-[300px]'>
                   <label
                     htmlFor="fromCoin"
-                    className='text-slate-50 max-sm:text-lg'
+                    className=' text-zinc-950 max-sm:text-lg'
                   >
                     De
                   </label>
@@ -95,7 +106,7 @@ export function App() {
                     onChange={(e) => setCoinFrom(e.target.value)}
                     value={coinFrom}
                     id='fromCoin'
-                    className='border rounded-md px-4 py-2 bg-zinc-900 text-sm
+                    className='border rounded-md px-4 py-2 bg-slate-300 border-zinc-950 text-zinc-950 text-sm
                         max-sm:px-5 max-sm:py-3 max-sm:text-lg'
                   >
                     <option value="USD" selected>Dólar Americano</option>
@@ -109,10 +120,11 @@ export function App() {
                     <option value="CNY">Yuan Renminbi</option>
                     <option value="TRY">Lira Turca</option>
                   </select>
+
                 </div>
 
                 <div className='mt-7'>
-                  <div className='max-md:hidden'>
+                  <div className='max-md:hidden  text-zinc-950'>
                     <MoveHorizontal />
                   </div>
 
@@ -124,7 +136,7 @@ export function App() {
                 <div className='flex flex-col gap-1 max-md:w-[300px]'>
                   <label
                     htmlFor="toCoin"
-                    className='max-sm:text-lg'
+                    className='max-sm:text-lg  text-zinc-950'
                   >
                     Para
                   </label>
@@ -132,11 +144,11 @@ export function App() {
                     value={coinTo}
                     onChange={(e) => setCointTo(e.target.value)}
                     id='toCoin'
-                    className='border rounded-md px-4 py-2 bg-zinc-900 text-sm
+                    className='border border-zinc-950 text-zinc-950 rounded-md px-4 py-2 bg-slate-300 text-sm
                        max-sm:px-5 max-sm:py-3 max-sm:text-lg'
                   >
-                    <option value="USD" selected>Dólar Americano</option>
-                    <option value="BRL">Real</option>
+                    <option value="USD">Dólar Americano</option>
+                    <option value="BRL" >Real</option>
                     <option value="EUR">Euro</option>
                     <option value="GBP" selected>Libra Esterlina</option>
                     <option value="JPY">Iene</option>
@@ -151,14 +163,14 @@ export function App() {
 
               <button
 
-                className='mt-5 py-4 px-10 bg-purple-700 rounded-lg text-lg
-                  hover:scale-95 duration-200'
+                className='mt-5 py-2 px-3 bg-zinc-700 rounded-lg text
+                  hover:scale-105 duration-200'
               >
-                Obter valor convertido
+                Converter
               </button>
 
-              {result.length > 0 && coinTo != coinFrom && (
-                <div className='flex gap-1 items-center font-semibold -mt-4 text-lg tracking-wider text-slate-50'
+              {result.length > 0 && coinTo != coinFrom && amount != '' && (
+                <div className='flex gap-1 items-center font-bold -mt-4 text-lg text-zinc-950'
                 >
                   {coinTo === 'USD' && (
                     <span>

@@ -36,9 +36,9 @@ export function SliderImages() {
                         />
                     </SwiperSlide>
                 ))}
-                <div className='flex gap-1 justify-end mt-2 text-xs'>
-                    <p>Designed by</p>
-                    <a className='font-semibold hover:text-blue-300 transition duration-300 hover:underline' href="https://www.freepik.com" target='_blank'>Freepik</a>
+                <div className='flex gap-1 justify-end mt-2 text-xs mr-[50px]'>
+                    <p className='text-zinc-950'>Designed by</p>
+                    <a className='text-zinc-950 font-semibold hover:text-blue-300 transition duration-300 hover:underline' rel="noopener noreferrer" href="https://www.freepik.com" target='_blank'>Freepik </a>
                 </div>
             </SwiperComponent>
         </div>
