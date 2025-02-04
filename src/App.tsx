@@ -71,7 +71,7 @@ export function App() {
             </div>
 
             <div className='flex flex-col gap-10 items-center border border-zinc-950 w-[480px] rounded-lg py-10 
-            max-md:w-[400px] max-sm:py-20'
+            max-md:w-[400px]'
             >
               <h1 className='font-semibold text-2xl max-sm:text-3xl  text-zinc-950'>Faça a sua conversão</h1>
 
