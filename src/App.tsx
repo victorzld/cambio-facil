@@ -53,16 +53,16 @@ export function App() {
   }, [])
 
   return (
-    <main className='mx-auto max-sm:h-full bg-slate-300'>
+    <main className='mx-auto bg-slate-300'>
       <div className="text-slate-50 h-screen grid grid-cols-2 max-md:grid-cols-1 xl:px-10">
 
         <form onSubmit={handleConvertCurrency}
           className="flex flex-col items-center justify-center max-sm:scale-90"
         >
 
-          <div className="flex flex-col items-center justify-center max-md:scale-90">
+          <div className="flex flex-col items-center justify-center max-md:scale-90 max-sm:-mt-10">
 
-            <div className='flex flex-col items-start max-sm:ml-5 xl:-ml-52 gap-4 mb-5'>
+            <div className='flex flex-col items-start max-sm:ml-5 xl:-ml-52 gap-4 mb-5 '>
               <div>
                 <h1 className='text-4xl font-bold tracking-wider text-zinc-950'>Esteja Sempre</h1>
                 <h1 className='text-4xl font-bold tracking-wider max-sm:ml-5 text-zinc-950'>Atualizado!</h1>
@@ -71,7 +71,7 @@ export function App() {
             </div>
 
             <div className='flex flex-col gap-10 items-center border border-zinc-950 w-[480px] rounded-lg py-10 
-            max-md:w-[400px]'
+            max-md:w-[400px] max-sm:py-20'
             >
               <h1 className='font-semibold text-2xl max-sm:text-3xl  text-zinc-950'>Faça a sua conversão</h1>
 
