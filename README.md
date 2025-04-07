@@ -10,7 +10,7 @@
 
 - <a href="https://www.seudolarhoje.com.br">Visite a aplicação</a>
 
-![video](https://github.com/user-attachments/assets/4f04ea52-9af6-4ee1-9ffd-6785f008c202)
+![Image](https://github.com/user-attachments/assets/64037998-a815-47d9-b5b7-2d4a15933564)
 
 Esta aplicação é um conversor monetário, no qual o usuário consegue fazer conversões das principais moedas do mundo. Basta selecionar a moeda de origem e para qual deseja converter. 
 
